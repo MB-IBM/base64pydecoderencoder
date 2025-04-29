@@ -1,0 +1,41 @@
+import pandas as pd
+import base64
+from datetime import date
+
+## Read a txt file from the path specified
+iptFile = open("C:\\Users\\003QQF744\\OneDrive - IBM\\Desktop\\sample.txt", "r")
+variable = iptFile.read()
+print(variable)
+
+## Generic Step
+## encode it as base 64
+string_bytes = variable.encode("ascii")
+base64_bytes = base64.b64encode(string_bytes)
+base64_string_en = base64_bytes.decode("ascii")
+print(f"Encoded string:{base64_string_en}",'\n')
+
+## Generic Step
+## decode it as base 64
+sample_string_bytes = base64_string_en.encode("ascii")
+base64_bytes = base64.b64decode(sample_string_bytes)
+base64_string_de = base64_bytes.decode("ascii")
+
+print(f"Decoded string: {base64_string_de}",'\n')
+
+# Open function to open the file "sample.txt"
+# (same directory) in append mode and
+file1 = open("C:\\Users\\003QQF744\\OneDrive - IBM\\Desktop\\sample.txt","w")
+file1.write("---------------")
+file1.write(base64_string_en)
+file1.write("---------------")
+file1.write(base64_string_de)
+file1.write("---------------")
+
+#print the date
+todayDate=date.today()
+trimmedDate=str(todayDate).replace("-","")
+file1.write(trimmedDate)
+file1.write("---------------")
+
+## Export the text file
+file1.close()
