@@ -1,3 +1,6 @@
+##This code is the intellectual property of IBM and is not to be used by non-IBM practitioners nor distributed outside of IBM internal without having the proper clearance. 
+##For full usage guidelines refer to Guidelines for Code Accelerator Consumption.
+
 import pandas as pd
 import base64
 from datetime import date
