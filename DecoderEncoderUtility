@@ -27,7 +27,7 @@ print(f"Decoded string: {base64_string_de}",'\n')
 
 # Open function to open the file "sample.txt"
 # (same directory) in append mode and
-file1 = open("C:\\Users\\003QQF744\\OneDrive - IBM\\Desktop\\sample.txt","w")
+file1 = open("C:\\Users\\*********\\************\\Desktop\\sample.txt","w")
 file1.write("---------------")
 file1.write(base64_string_en)
 file1.write("---------------")
