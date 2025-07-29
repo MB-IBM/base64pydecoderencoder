@@ -6,7 +6,7 @@ import base64
 from datetime import date
 
 ## Read a txt file from the path specified
-iptFile = open("C:\\Users\\003QQF744\\OneDrive - IBM\\Desktop\\sample.txt", "r")
+iptFile = open("C:\\Users\\*********\\*********\\Desktop\\sample.txt", "r")
 variable = iptFile.read()
 print(variable)
 
